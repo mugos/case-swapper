@@ -1,0 +1,9 @@
+version: '3.7'
+services:
+  test:
+    image: node:alpine
+    command: npm test
+    working_dir: /usr/local/src
+    volumes:
+      - .:/usr/local/src
+      - /usr/local/src/node_modules
